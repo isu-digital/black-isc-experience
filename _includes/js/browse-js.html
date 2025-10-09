@@ -802,16 +802,33 @@ function shuffle(array) {
 }
 
 /**
- * Sort items by specified field
+ * Sort items by specified field, with special handling for last-name
  */
 function sorting(jsonObject, keyToSortBy) {
-    jsonObject.sort((a, b) => {
-        let x = a[keyToSortBy];
-        let y = b[keyToSortBy];
-        if (typeof x === 'string') x = x.toUpperCase();
-        if (typeof y === 'string') y = y.toUpperCase();
-        return (x == null) ? 1 : (y == null) ? -1 : (x < y) ? -1 : (x > y) ? 1 : 0;
-    });
+    if (keyToSortBy === "last-name") {
+        jsonObject.sort((a, b) => {
+            // Try to use a 'last_name' field if present, else extract from 'title'
+            const getLastName = obj => {
+                if (obj.last_name) return obj.last_name.toUpperCase();
+                if (obj.title) {
+                    const parts = obj.title.trim().split(/\s+/);
+                    return parts.length ? parts[parts.length - 1].toUpperCase() : "";
+                }
+                return "";
+            };
+            const x = getLastName(a);
+            const y = getLastName(b);
+            return x.localeCompare(y);
+        });
+    } else {
+        jsonObject.sort((a, b) => {
+            let x = a[keyToSortBy];
+            let y = b[keyToSortBy];
+            if (typeof x === 'string') x = x.toUpperCase();
+            if (typeof y === 'string') y = y.toUpperCase();
+            return (x == null) ? 1 : (y == null) ? -1 : (x < y) ? -1 : (x > y) ? 1 : 0;
+        });
+    }
 }
 
 // =============================================================================
