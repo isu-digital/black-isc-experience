@@ -13,3 +13,8 @@ type,Type,,,DCTERMS.type,
 format,Format,,,,encodingFormat
 language,Language,,,DCTERMS.language,
 rightsstatement,,,,DCTERMS.rights,license
+degree,Degree,
+program,Program,true,
+college,College,
+org-membership,Organizations,
+hbcu-connection,HBCU Affiliation,,true,

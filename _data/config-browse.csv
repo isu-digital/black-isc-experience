@@ -1,7 +1,12 @@
 field,display_name,btn,hidden,sort_name,facet_name
-date,Date,,,Date Created
+date-graduated,Graduation Year,,,
 description,,,true,
 creator,Creator,,,
 subject,,true
 location,,true,,,Location Depicted
 identifier,,,true,Identifier
+degree,Degree,true,
+program,Program,true,
+college,College,true,
+org-membership,Organizations,true,
+hbcu-connection,HBCU Affiliation,,true,
