@@ -1,6 +1,5 @@
 field,display_name,browse_link,external_link,dc_map,schema_map
 title,Name,,,DCTERMS.title,headline
-last-name,Last Name,,,,
 creator,Creator,,,DCTERMS.creator,creator
 date,Date Created,,,DCTERMS.date,dateCreated
 description,Biography,,,DCTERMS.description,description
