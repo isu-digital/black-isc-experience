@@ -8,7 +8,7 @@
 #
 # featured image is used in home page banner and in meta markup to represent the collection
 # use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
-featured-image: https://isu-digital.github.io/black-isc-experience/assets/black-isc-header-crop.jpg
+featured-image: /assets/black-isc-header-crop.JPG
 featured-image-alt-text: A banner image with portrait photos of Black Iowa State College Alumni with an aerial view of campus in the background.
 # optional: add extra padding around collection title for a larger image feature. 
 home-title-y-padding: 10em # the margin from the top your title portion will appear.
