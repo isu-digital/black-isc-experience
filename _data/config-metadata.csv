@@ -1,20 +1,22 @@
 field,display_name,browse_link,external_link,dc_map,schema_map
-title,Title,,,DCTERMS.title,headline
+title,Name,,,DCTERMS.title,headline
+last-name,Last Name,,,,
 creator,Creator,,,DCTERMS.creator,creator
 date,Date Created,,,DCTERMS.date,dateCreated
-description,Description,,,DCTERMS.description,description
+description,Biography,,,DCTERMS.description,description
 subject,Subjects,true,,DCTERMS.subject,keywords
 location,Location,,,,contentLocation
 latitude,Latitude,,,,
 longitude,Longitude,,,,
-source,Source,,,,
-identifier,Source Identifier,,,,
 type,Type,,,DCTERMS.type,
 format,Format,,,,encodingFormat
 language,Language,,,DCTERMS.language,
 rightsstatement,,,,DCTERMS.rights,license
 degree,Degree,
 program,Program,true,
-college,College,
-org-membership,Organizations,
-hbcu-connection,HBCU Affiliation,,true,
+college,College,true,
+org-membership,Organizations,true,
+hbcu-connection,HBCU Affiliation,true,,
+img-source,Image Source,,,,
+bio-source,Bibliographic Sources,,,,
+identifier,Source Identifier,,,,
